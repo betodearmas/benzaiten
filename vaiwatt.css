@@ -1,0 +1,322 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+/* off-screen menu*/
+.off-screen-menu {
+    background-color: rgb(255, 153, 241);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+.off-screen-menu ul.menu-list {
+    list-style-type: none; /* Remove bullet points */
+}
+.menu-list a:hover {
+    color: rgb(2, 0, 71)
+}
+.menu-list a {
+    color: antiquewhite;
+    font-family: AmericanTypewriter;
+    text-decoration: none;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+nav {
+    padding: 1rem; 
+    display: flex;
+}
+
+/*ham menu*/
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 20px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+}
+.ham-menu span {
+    height: 5px; 
+    width: 100%;
+    background-color: rgb(2, 0, 71);
+    border-radius: 25px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease;
+}
+.scrolled .ham-menu span {
+    background-color:blanchedalmond; /* Color when scrolled */
+}
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .2s ease;
+}
+.ham-menu.active span:nth-child(2) {
+   opacity: 0%;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-90deg);
+    transition: .2s ease;
+}
+
+/*Image*/
+.welcometobenzaitencontainer {
+    width: 100%;
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Set the container to relative position */
+    background-image: url('Vaiwatt-2021-photo-by-Anna-Shivarnova.webp');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/*titles*/
+h1 {
+    position: absolute;
+    color: white; 
+    font-size: clamp(5vw,5vw,7vw);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    text-align: center center;
+    justify-content: center center;
+    align-items: center center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+  }
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: clamp(40px); /* Adjust clamp to desired size */
+    color: rgb(170, 170, 170);
+}
+
+/*main text*/
+.welcometobenzaitentextcontainer {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: black; 
+    font-size: 25px;
+    font-family: AmericanTypewriter;
+    font-weight: 500;
+    text-align: justify;
+    text-decoration: none;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    line-height: 50px;
+}
+
+/*comments box*/
+.comments-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.comments-section h2 {
+    margin-top: 0;
+    font-family: AmericanTypewriter;
+    font-weight: 100;
+    color: white;
+}
+
+.comments-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: white;
+    font-weight:100;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+/*submit button*/
+#submitbutton {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(176, 57, 79); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: AmericanTypewriter;;
+}
+#submitbutton:hover {
+    background-color: #007BFF;
+}
+
+/*nav buttons*/
+.button-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+#nextbutton {
+    width: 115%;
+    padding: 10px;
+    background-color: rgb(176, 57, 79);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: AmericanTypewriter;
+    text-align: right;
+    position: relative;
+    right: 10%; /* Move the button 10% to the left */
+    transition: transform 0.3s ease, color 0.3s ease, style 0.5s ease; /* Smooth transition for transform and color */
+  }
+  
+#nextbutton:hover {
+    background-color: #007BFF;
+    transform: translate(30px); /* Move the button 30px to the right */
+    font-style: italic;
+  }
+#previousbutton {
+    width: 103%;
+    overflow: hidden;
+    padding: 10px;
+    background-color:rgb(176, 57, 79); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: AmericanTypewriter;
+    text-align: left;
+    transition: transform 0.3s ease, color 0.3s ease, style 0.5s ease; /* Smooth transition for transform and color */
+}
+#previousbutton:hover {
+    background-color: #007BFF;
+    transform: translate(-30px); /* Move the text 10px to the right and 10px down */
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px; /* or any minimum size you prefer */
+}
+
+    h1 {
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    color: white; 
+    font-size: clamp(5vw,7vw,7vw);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    text-align: center center;
+    justify-content: center center;
+    align-items: center center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+  .welcometobenzaitentextcontainer {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: black; 
+    font-size: 23px;
+    font-family: AmericanTypewriter;
+    font-weight: 500;
+    text-align: justify;
+    text-decoration: none;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    line-height: 28px;
+}
+.off-screen-menu {
+    background-color: rgb(255, 153, 241);
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+.ham-menu {
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    right: 20px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+}
+.ham-menu span {
+height: 3px; 
+width: 100%;
+background-color:  rgb(2, 0, 71);
+border-radius: 25px; 
+position: absolute; 
+top: 50%; 
+left: 50%;
+transform: translate(-50%, -50%);
+transition: .2s ease;
+}
+}

@@ -1,0 +1,420 @@
+/*THE PORTAL*/
+.THEPORTALContainer {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust this height as needed */
+    padding-top: 50vh;
+    position: relative; /* Set the container to relative position */
+    background-image: url('THEPORTAL.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.THEPORTALText {
+    position: absolute;
+    top: 35%; 
+    left: 32%;
+    color: white; 
+    font-size: 5vw; 
+    font-family: FreedomChanges;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+    text-decoration: none;
+}
+.THEPORTALText:hover {
+    transform: translate(10px, 10px); /* Move the text 10px to the right and 10px down */
+    color: rgb(63, 41, 25); /* Change text color on hover */
+    text-shadow: 5px 5px 5px rgb(26, 112, 36)
+}
+
+
+/*VAIWATT*/
+.VAIWATTContainer {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust this height as needed */
+    padding-top: 50vh;
+    position: relative; /* Set the container to relative position */
+    background-image: url('Vaiwatt-2021-photo-by-Anna-Shivarnova.webp');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.VAIWATTText {
+    position: absolute;
+    top: 40%; 
+    left: 55%;
+    color: white; 
+    font-size: 7vw; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+.VAIWATTText:hover {
+    transform: translate(10px, 10px); /* Move the text 10px to the right and 10px down */
+    color: rgb(255, 153, 241); /* Change text color on hover */
+    text-shadow: 5px 5px 5px rgb(2, 0, 71)
+}
+
+/*FUQA*/
+.FUQAContainer {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust this height as needed */
+    padding-top: 50vh;
+    position: relative; /* Set the container to relative position */
+    background-image: url('FUQA.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.FUQAText {
+    position: absolute;
+    top: 25%; 
+    left: 25%;
+    color: white; 
+    font-size: 7vw; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+.FUQAText:hover {
+    transform: translate(10px, 10px); 
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px rgb(4, 0, 134)
+}
+
+/*WELCOME TO BENZAITEN*/
+.welcomeToBenzaitenContainer {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust this height as needed */
+    padding-top: 50vh;
+    position: relative; /* Set the container to relative position */
+    background-image: url('welcometobenzaiten.jpg');
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center center; /* Center the image */
+    overflow: hidden;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+} 
+.welcomeToBenzaitenText {
+    position: absolute;
+    top: 26%;
+    left: 15%;
+    color: white; 
+    font-size: clamp(5vw,5vw,7vw);
+    font-family: AmericanTypewriter;
+    font-weight: 600;
+    text-align: center center;
+    justify-content: center center;
+    align-items: center center;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+.welcomeToBenzaitenText:hover {
+    transform: scale(1.1); 
+}
+
+/*index*/
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.landing-button {
+    padding: 15px 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(176, 57, 79);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 2; 
+}
+.landing-button:hover {
+    background-color: rgb(176, 57, 79);
+    transform: translateY(-5px);
+    color: rgb(255, 255, 255);
+}
+.welcomelogo {
+    position: absolute;
+    width: 50%;
+    animation: spin 60s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    from {transform: rotate (0deg);
+    }
+    to {transform: rotate(360deg);
+    }
+}
+
+/*added fonts*/
+@font-face {
+    font-family: 'AmericanTypewriter';
+    src: url(/Users/humbertookawa/Desktop/Humberto/Docs/Benzaiten/american-typewriter.ttf);
+}
+@font-face {
+    font-family: 'Paytone';
+    src: url(/Users/humbertookawa/Desktop/HumbertoDocs/Benzaiten/paytone.ttf);
+}
+@font-face {
+    font-family: 'FreedomChanges';
+    src: url(freedomchanges.ttf);
+}
+
+/*english home*/
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+img {
+ width: 220px;
+ display: block;
+ margin: auto;
+}
+.headerContainer {
+ text-align: center;
+}
+h1 {
+ font-family: 'Lucida Grande';
+ font-style: bold;
+ font-size: 10vw;
+ margin: 0;
+}
+.subheaderContainer {
+ text-align: center;
+ font-size: 2.5vw;;
+}
+h2 {
+ font-family: AmericanTypewriter;
+ font-weight: lighter;
+ color: rgb(170, 170, 170);
+ margin-top: 0;
+}
+
+/* off-screen menu*/
+.off-screen-menu {
+    background-color: rgb(176, 57, 79);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+.off-screen-menu ul.menu-list {
+    list-style-type: none; /* Remove bullet points */
+}
+.menu-list a:hover {
+    color: black;
+}
+.menu-list a {
+    color: antiquewhite;
+    font-family: AmericanTypewriter;
+    text-decoration: none;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+nav {
+    padding: 1rem; 
+    display: flex;
+}
+
+/*ham menu*/
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 20px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+}
+.ham-menu span {
+    height: 5px; 
+    width: 100%;
+    background-color: black;
+    border-radius: 25px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease;
+}
+.scrolled .ham-menu span {
+    background-color:blanchedalmond; /* Color when scrolled */
+}
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .2s ease;
+}
+.ham-menu.active span:nth-child(2) {
+   opacity: 0%;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-90deg);
+    transition: .2s ease;
+}
+
+/*POP-UP*/
+.popup {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.304); 
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    position: relative;
+    background-color: rgb(176, 57, 79); 
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position:absolute;
+    top: 0px;
+    right: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#subscribesubmit {
+    padding: 10px 20px;
+    background-color: rgb(176, 57, 79); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: AmericanTypewriter;
+}
+#subscribesubmit:hover {
+    background-color: goldenrod;
+}
+
+@media screen and (max-width: 1024px) { 
+
+.off-screen-menu {
+    background-color: rgb(176, 57, 79);
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.4s ease;
+    z-index: 999;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+.ham-menu {
+    height: 25px;
+    width: 25px;
+    top: 10px;
+    right: 20px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+}
+.ham-menu span {
+    height: 3px; 
+    width: 100%;
+    background-color: black;
+    border-radius: 25px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease;
+}
+.FUQAText {
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px rgb(4, 0, 134)
+}
+.VAIWATTText {
+    color: rgb(255, 153, 241); /* Change text color on hover */
+    text-shadow: 5px 5px 5px rgb(2, 0, 71)
+}
+.THEPORTALText {
+    color: rgb(63, 41, 25); /* Change text color on hover */
+    text-shadow: 5px 5px 5px rgb(26, 112, 36)
+}
+}
